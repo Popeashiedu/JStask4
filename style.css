@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(41, 40, 39);
+  min-height: 100vh;
+  font-family: monospace;
+  background-image: linear-gradient();
+}
+/*body class of wrapper*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+header {
+  margin: 0.5rem 0 4rem 0;
+  font-size: 200%;
+  text-align: center;
+}
+
+/*Image styling begins*/
+.img {
+  width: 50%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin: -3rem 0 2rem 0;
+}
+img {
+  max-width: 100%;
+  border-radius: 8% 8% 0 8%;
+  filter: drop-shadow(0 5px 3px black);
+}
+
+/*Image styling ends*/
+
+header,
+form {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/*question and answers*/
+.question {
+  text-align: center;
+  border-radius: 10px;
+  transition: all 5 ease;
+}
+.index {
+  margin: -1.5rem 0 0 0.5em;
+  font-weight: bolder;
+}
+
+h3 {
+  margin: 0.5rem 1rem;
+  color: white;
+  background-color: #6d004f;
+  padding: 0.5rem;
+  font-size: 150%;
+}
+.answer-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0.5rem 0;
+}
+
+.answers {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  align-self: center;
+  cursor: pointer;
+  width: 15rem;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #6d004f;
+  border-style: solid;
+}
+div.answers:active {
+  width: 13rem;
+  font-weight: bolder;
+  border: none;
+}
+
+.answer-style {
+  background-color: crimson;
+}
+
+.btns {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn-1,
+.btn-2 {
+  padding: 0.5rem;
+  min-width: 8rem;
+  cursor: pointer;
+  border: none;
+  background-color: gold;
+  font-size: 1rem;
+}
+.btn-1 {
+  margin: 0 0 0 1rem;
+}
+.btn-2 {
+  margin: 0 1rem 0 1rem;
+}
+
+.done {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/*Counter*/
+.counter {
+  align-self: center;
+  margin: 0.7rem 0 1rem 0;
+  font-weight: bolder;
+}
+
+/*End prompt*/
+.end-prompt {
+  height: 150%;
+}
+
+/*media queries*/
+@media all and (min-width: 0px) {
+  h3 {
+    font-size: 90%;
+  }
+  .btn-2 {
+    padding: 0.2rem;
+    max-width: 20%;
+  }
+}
+@media all and (min-width: 560px) {
+  h3 {
+    font-size: 150%;
+  }
+}
+@media all and (min-width: 778px) {
+  .img {
+    width: 15%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+}
+@media all and (min-width: 992px) {
+  .img {
+    width: 30%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+}
+@media all and (min-width: 1100px) {
+  .img {
+    width: 20%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media all and (min-width: 1600px) {
+}

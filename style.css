@@ -8,7 +8,7 @@ body {
   color: rgb(41, 40, 39);
   min-height: 100vh;
   font-family: monospace;
-  background-image: linear-gradient();
+  background-color: lightgoldenrodyellow;
 }
 /*body class of wrapper*/
 .wrapper {

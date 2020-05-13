@@ -10,6 +10,7 @@ const imgLoader = document.querySelector(".img");
 const answerContainer = document.querySelector(".answer-container");
 const score = document.querySelector(".counter");
 const indexCounter = document.querySelector(".index");
+const image = document.querySelector(".image");
 
 //eventlisteners
 nextButton.addEventListener("click", countIncrement);
@@ -50,10 +51,10 @@ function countIncrement(event) {
     let indexing = counter + 1;
     indexCounter.innerText = `Q${indexing}`;
     answerContainer.classList.remove("done");
-    console.log(counter);
-    console.log(questionsToSelect[counter]);
+    //console.log(counter);
+    //console.log(questionsToSelect[counter]);
     question.innerText = questionsToSelect[counter];
-    console.log(answersToSelect[counter][0]);
+    //console.log(answersToSelect[counter][0]);
     answer1.innerText = answersToSelect[counter][0];
     answer2.innerText = answersToSelect[counter][1];
     answer3.innerText = answersToSelect[counter][2];
@@ -76,6 +77,7 @@ function countIncrement(event) {
       question.classList.add("end-prompt");
       score.remove();
       if (correct >= 3) {
+        image.src = "pope.jpg";
         question.innerText =
           "Great Job! " + correct + " out of " + counter + " is not bad";
         nextButton.innerText = "Try again?";
@@ -83,6 +85,7 @@ function countIncrement(event) {
           window.location.reload();
         });
       } else {
+        image.src = "photo2.jfif";
         question.innerText =
           correct +
           " out of " +
@@ -113,7 +116,7 @@ function countDecrement(event) {
   }
 }
 function answerChecker(event) {
-  console.log(event.target.innerText);
+  //console.log(event.target.innerText);
   answerContainer.classList.add("done");
   let checkAnswer = event.target.innerText;
   if (counter == 0) {
